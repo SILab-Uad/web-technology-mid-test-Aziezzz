@@ -57,20 +57,20 @@ h1 {
   cursor: pointer;
 }
 
-.inputlength {
-  display: flex;
-  width: 50%;
-  height: 20px;
-  margin-left: 90px;
-  margin-top: 5px;
-}
-
 .btnpass:hover {
   background-color: rgb(201, 210, 218);
 }
 
 .btnclip:hover {
   background-color: rgb(201, 210, 218);
+}
+
+.inputlength {
+  display: flex;
+  width: 50%;
+  height: 20px;
+  margin-left: 90px;
+  margin-top: 5px;
 }
 
 .flexcheck {
