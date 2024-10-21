@@ -15,33 +15,23 @@
 
       <h3>Select criteria:</h3>
       <!-- TODO: Create checkboxes for including uppercase, lowercase, numbers, and special characters -->
-      <label>
-        <input type="checkbox" id="includeUppercase" class="check-criteria" />
-        Include Uppercase </label
-      ><br />
-      <label>
-        <input type="checkbox" id="includeLowercase" class="check-criteria" />
-        Include Lowercase </label
-      ><br />
-      <label>
-        <input type="checkbox" id="includeNumbers" class="check-criteria" />
-        Include Numbers </label
-      ><br />
-      <label>
-        <input type="checkbox" id="includeSpecialChars" class="check-criteria" />
-        Include Special Characters </label
-      ><br />
-      <!-- TODO: Create a button to generate the password -->
-      <!-- BONUS: Add a "Copy to Clipboard" button -->
-      <div class="btnpass"></div>
-      <button class="btnbiru" id="generatebtn">Generate Password</button>
-      <button class="btnhijau" id="copybtn">Copy To Clipboard</button>
+      <div class="flexcheck">
+        <label> <input type="checkbox" id="includeUppercase" /> Include Uppercase </label><br />
+        <label> <input type="checkbox" id="includeLowercase" /> Include Lowercase </label><br />
+        <label> <input type="checkbox" id="includeNumbers" /> Include Numbers </label><br />
+        <label> <input type="checkbox" id="includeSpecialChars" /> Include Special Characters </label><br />
+      </div>
 
-      <!-- TODO: Create a text field to display the generated password -->
-      <label class="password-result" for="passwordOutput">Password:</label>
+      <div class="flexbtnpass">
+        <button class="btnpass" id="generateBtn">Generate Password</button>
+        <button class="btnclip" id="copyBtn">Copy To Clipboard</button>
+      </div>
+
+      <h3>New Password:</h3>
       <input type="text" id="passwordOutput" readonly />
     </div>
 
+    <div class="background"></div>
     <script src="script.js"></script>
     <script src="dom.js"></script>
   </body>
